@@ -15,9 +15,6 @@ const filterFunction = (data) => {
                 
             }
         }
-
-
-
     });
 }
 console.log(filterFunction(transactions))
@@ -40,26 +37,7 @@ const aboveAverageFunction = (data) => {
             return transaction
         }
     })
-
 }
 
 console.log(aboveAverageFunction(transactions))
-
-// const aboveAverageFunction = (data) => {
-//     let sum = 0;
-//     for (let i = 0; i < data.length; i++) {
-//         sum = sum + parseFloat(data[i].price);
-//     }
-//     let average = sum / data.length;
-//     return data.map(transaction => {
-//         if (parseFloat(transaction.price) < average) {
-//             transaction.isAboveAverage = false;
-//             return transaction;
-//         } else {
-//             transaction.isAboveAverage = true;
-//             return transaction
-//         }
-//     })
-
-// }
 
